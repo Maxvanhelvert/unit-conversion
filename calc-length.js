@@ -6,7 +6,7 @@ inputBox.addEventListener("keyup", () => {
 });
 
 function calculate() {
-  let input = inputBox.innerHTML;
-  print(input);
-  outputBox.innerHTML = input;
+  let input = inputBox.value;
+  console.log(input);
+  outputBox.value = input;
 }
