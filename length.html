@@ -21,7 +21,12 @@
         <option>Feet</option>
         <option>Inches</option>
       </select>
-      <input type="number" placeholder="Input" />
+      <input
+        id="input"
+        type="number"
+        placeholder="Input"
+        onkeyup="calculate()"
+      />
     </form>
     <form>
       <label>To:</label>
@@ -35,7 +40,8 @@
         <option>Feet</option>
         <option>Inches</option>
       </select>
-      <input type="text" placeholder="Output" readonly />
+      <input id="output" type="text" placeholder="Output" readonly />
     </form>
   </body>
+  <script src="./calc-length"></script>
 </html>
