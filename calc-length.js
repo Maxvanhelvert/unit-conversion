@@ -2,6 +2,7 @@ let inputBox = document.getElementById("input");
 let outputBox = document.getElementById("output");
 let inputUnit = document.getElementById("inputSelect");
 let outputUnit = document.getElementById("outputSelect");
+let calcButton = document.getElementById("calculate");
 
 function calculate() {
   let input = inputBox.value;
@@ -55,5 +56,9 @@ function getOutput(input, unit) {
 }
 
 inputBox.addEventListener("keyup", () => {
+  calculate();
+});
+
+calcButton.addEventListener("click", () => {
   calculate();
 });
