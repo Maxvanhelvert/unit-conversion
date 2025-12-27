@@ -9,7 +9,7 @@ function calculate() {
   let outUnit = outputUnit.value;
   let meter = getMeters(input, inUnit);
   let output = getOutput(meter, outUnit);
-  outputBox.value = Math.round(output * 100);
+  outputBox.value = output;
 }
 
 function getMeters(input, unit) {

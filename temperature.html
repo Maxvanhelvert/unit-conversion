@@ -11,21 +11,22 @@
     <h2>Choose your choice:</h2>
     <form>
       <label>From:</label>
-      <select>
-        <option>Celcius</option>
-        <option>Farnheit</option>
+      <select id="inputSelect">
+        <option>Celsius</option>
+        <option>Fahrenheit</option>
         <option>Kelvin</option>
       </select>
-      <input type="number" placeholder="Input" />
+      <input id="input" type="number" placeholder="Input" />
     </form>
     <form>
       <label>To:</label>
-      <select>
-        <option>Celcius</option>
-        <option>Farnheit</option>
+      <select id="outputSelect">
+        <option>Celsius</option>
+        <option>Fahrenheit</option>
         <option>Kelvin</option>
       </select>
-      <input type="text" placeholder="Output" readonly />
+      <input id="output" type="text" placeholder="Output" readonly />
     </form>
   </body>
+  <script src="./calc-temp.js"></script>
 </html>
