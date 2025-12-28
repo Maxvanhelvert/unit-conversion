@@ -10,7 +10,7 @@ function calculate() {
   let outUnit = outputUnit.value;
   let celsius = getCelsius(input, inUnit);
   let output = getOutput(celsius, outUnit);
-  outputBox.value = Math.round(output);
+  outputBox.value = output;
 }
 
 function getCelsius(input, unit) {
@@ -31,7 +31,7 @@ function getOutput(input, unit) {
     case "Fahrenheit":
       return input * 1.8 + 32;
     case "Kelvin":
-      return input + 273.15;
+      return parseFloat(input) + 273.15;
   }
 }
 
