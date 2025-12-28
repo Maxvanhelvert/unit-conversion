@@ -44,4 +44,27 @@ button:hover {
 form {
   display: flex;
   flex-direction: column;
+  padding: 10px;
+  font-size: 20px;
+}
+
+select {
+  color: rgb(65, 45, 84);
+  background-color: rgb(194, 159, 227);
+  font-size: 20px;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input {
+  background-color: antiquewhite;
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+  border-width: 2px;
+  border-color: rgb(194, 159, 227);
+  border-radius: 10px;
 }

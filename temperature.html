@@ -3,29 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./unit-styles.css" />
     <title>Temperature</title>
   </head>
   <body>
+    <button onclick="location.href='./index.html'">HOME</button>
     <h1>Temperature</h1>
-    <button><a href="./index.html">HOME</a></button>
     <h2>Choose your choice:</h2>
     <form>
       <label>From:</label>
+      <input id="input" type="number" placeholder="Input" />
       <select id="inputSelect">
         <option>Celsius</option>
         <option>Fahrenheit</option>
         <option>Kelvin</option>
       </select>
-      <input id="input" type="number" placeholder="Input" />
     </form>
     <form>
       <label>To:</label>
+      <input id="output" type="text" placeholder="Output" readonly />
       <select id="outputSelect">
         <option>Celsius</option>
         <option>Fahrenheit</option>
         <option>Kelvin</option>
       </select>
-      <input id="output" type="text" placeholder="Output" readonly />
     </form>
     <button id="calculate">Calculate</button>
   </body>

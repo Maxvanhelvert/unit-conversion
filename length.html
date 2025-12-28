@@ -7,11 +7,12 @@
     <title>Length</title>
   </head>
   <body>
+    <button onclick="location.href='./index.html'">HOME</button>
     <h1>Length</h1>
-    <button><a href="./index.html">HOME</a></button>
     <h2>Choose your choice:</h2>
     <form>
       <label>From:</label>
+      <input id="input" type="number" placeholder="Input" />
       <select id="inputSelect">
         <option>Meter</option>
         <option>Centimeter</option>
@@ -22,10 +23,10 @@
         <option>Feet</option>
         <option>Inches</option>
       </select>
-      <input id="input" type="number" placeholder="Input" />
     </form>
     <form>
       <label>To:</label>
+      <input id="output" placeholder="Output" readonly />
       <select id="outputSelect">
         <option>Meter</option>
         <option>Centimeter</option>
@@ -36,7 +37,6 @@
         <option>Feet</option>
         <option>Inches</option>
       </select>
-      <input id="output" placeholder="Output" readonly />
     </form>
     <button id="calculate">Calculate</button>
   </body>
