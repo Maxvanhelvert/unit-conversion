@@ -10,7 +10,7 @@ function calculate() {
   let outUnit = outputUnit.value;
   let meter = getMeters(input, inUnit);
   let output = getOutput(meter, outUnit);
-  outputBox.value = output;
+  return output;
 }
 
 function getMeters(input, unit) {
@@ -55,10 +55,18 @@ function getOutput(input, unit) {
   }
 }
 
+function round(num) {
+  return Math.round(num * 100) / 100;
+}
+
 inputBox.addEventListener("keyup", () => {
-  calculate();
+  output = calculate();
+  out = round(output);
+  outputBox.value = out;
 });
 
 calcButton.addEventListener("click", () => {
-  calculate();
+  output = calculate();
+  out = round(output);
+  outputBox.value = out;
 });

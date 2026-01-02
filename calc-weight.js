@@ -43,10 +43,18 @@ function getOutput(input, unit) {
   }
 }
 
+function round(num) {
+  return Math.round(num * 100) / 100;
+}
+
 inputBox.addEventListener("keyup", () => {
-  calculate();
+  output = calculate();
+  out = round(output);
+  outputBox.value = out;
 });
 
 calcButton.addEventListener("click", () => {
-  calculate();
+  output = calculate();
+  out = round(output);
+  outputBox.value = out;
 });
