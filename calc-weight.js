@@ -10,7 +10,7 @@ function calculate() {
   let outUnit = outputUnit.value;
   let gram = getGram(input, inUnit);
   let output = getOutput(gram, outUnit);
-  outputBox.value = output;
+  return output;
 }
 
 function getGram(input, unit) {

@@ -10,7 +10,7 @@ function calculate() {
   let outUnit = outputUnit.value;
   let celsius = getCelsius(input, inUnit);
   let output = getOutput(celsius, outUnit);
-  outputBox.value = output;
+  return output;
 }
 
 function getCelsius(input, unit) {

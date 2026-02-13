@@ -10,7 +10,7 @@ function calculate() {
   let outUnit = outputUnit.value;
   let liter = getLiter(input, inUnit);
   let output = getOutput(liter, outUnit);
-  outputBox.value = output;
+  return output;
 }
 
 function getLiter(input, unit) {
