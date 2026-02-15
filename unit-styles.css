@@ -42,6 +42,18 @@ button:hover {
   color: antiquewhite;
 }
 
+button:active {
+  background-color: rgb(65, 45, 84);
+  color: antiquewhite;
+  box-shadow: 10px 10px rgba(1, 1, 1, 0.5) inset;
+}
+
+button:active a {
+  position: relative;
+  top: 5px;
+  left: 10px;
+}
+
 form {
   display: flex;
   flex-direction: column;
